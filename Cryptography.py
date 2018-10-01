@@ -15,7 +15,7 @@ def generatePublicKey(p, q, e):
 def cryptography(n, e, mensage):
     newMensage = ""
     for i in mensage:
-        newMensage +=(chr((ord(i)**e)%n))
-    f = open("NewMensage.txt", 'w', encoding='utf-8')
+        newMensage += str((convertToInt(i)**e)%n) + " "
+    f = open("NewMensage.txt", 'w')
     f.write(newMensage)
     f.close()
