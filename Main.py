@@ -19,6 +19,7 @@ while i != 0:
         mensage = input()
         cryptography(n, e, mensage)
     if i == 3:
+        print("Digite as chaves P, Q e E")
         p, q, e = map(int, input().split())
         descriptograph(p, q, e)
     print("Ditite:")

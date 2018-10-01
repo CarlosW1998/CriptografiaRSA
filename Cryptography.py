@@ -16,7 +16,6 @@ def cryptography(n, e, mensage):
     newMensage = ""
     for i in mensage:
         newMensage +=(chr((ord(i)**e)%n))
-    print(newMensage)
     f = open("NewMensage.txt", 'w', encoding='utf-8')
     f.write(newMensage)
     f.close()
